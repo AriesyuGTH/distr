@@ -96,12 +96,13 @@ gantt
 ```mermaid
 flowchart TD
 
-    Login([Login]) --> V1
+    Login([Login]) --> Board1
 
-        V1[Dashboard] --> V2[Create Application]
-        V2 --> V3[Add Version]
-        V3 --> V4[Deploy to VM]
-        V4 --> V5[New Version]
+        Board1[Dashboard] --> A1[Create Application]
+        A1 --> A2[Add Version]
+        A2 --> D1[Create Agent]
+        D1 --> D2[Deploy to VM]
+        D2 --> V5[New Version]
         V5 --> V6[Multi-deployment]
 
     style Login fill:#e1f5ff
