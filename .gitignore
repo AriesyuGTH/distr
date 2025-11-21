@@ -52,3 +52,5 @@ Thumbs.db
 
 # dev variables that are sensitive
 .env.development.local.secret
+*node_modules
+tts-kit/v3/*box
